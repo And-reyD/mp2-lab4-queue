@@ -27,7 +27,7 @@ public:
 
 	friend ostream& operator<<(std::ostream& out, const TQueue& qu) {
 		out << "[ ";
-		for (int t_count = qu.count, i = q.head; t_count > 0; t_count--) {
+		for (int t_count = qu.count, i = qu.head; t_count > 0; t_count--) {
 			out << qu.arr[i] << ' ';
 			i = (++i) % qu.max_size;
 		}
