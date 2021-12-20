@@ -5,8 +5,8 @@ using namespace std;
 int main() {
     setlocale(LC_ALL, "russian");
     setlocale(LC_NUMERIC, "eng");
-
-	TLQueue<int> qu;
+    
+    TLQueue<int> qu;
     cout << "qu: " << qu << "\nEmpty = " << qu.empty() << "\n\n";
 
     for (int i = 1; i <= 3; i++) {
