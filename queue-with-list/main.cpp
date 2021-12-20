@@ -3,8 +3,8 @@
 using namespace std;
 
 int main() {
-	setlocale(LC_ALL, "russian");
-	setlocale(LC_NUMERIC, "eng");
+    setlocale(LC_ALL, "russian");
+    setlocale(LC_NUMERIC, "eng");
 
 	TLQueue<int> qu;
     cout << "qu: " << qu << "\nEmpty = " << qu.empty() << "\n\n";
@@ -58,6 +58,6 @@ int main() {
     cout << "qu2: " << qu2 << "\nEmpty = " << qu2.empty() << "\n\n";
 
     cout << "(qu3 == qu2) = " << (qu3 == qu2) << "\n";
-
-	return 0;
+    
+    return 0;
 }
