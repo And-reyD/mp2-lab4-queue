@@ -22,6 +22,10 @@ public:
 	bool full() const;
 	void clear();
 
+	int get_max_size();
+	int get_count();
+	int get_head();
+
 	void push(T elem);
 	T pop();
 
@@ -126,6 +130,21 @@ template<class T>
 void TQueue<T>::clear() {
 	count = 0;
 	tail = -1, head = 0;
+}
+
+template<class T>
+int TQueue<T>::get_max_size() {
+	return max_size;
+}
+
+template<class T>
+int TQueue<T>::get_count() {
+	return count;
+}
+
+template<class T>
+int TQueue<T>::get_head() {
+	return head;
 }
 
 template<class T>
